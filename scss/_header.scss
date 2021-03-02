@@ -1,0 +1,54 @@
+
+/* ---------- HEADER ----------*/
+
+$colorblack:#000;
+$colorwhite:#fff;
+
+
+.header {
+	grid-area: header;
+	padding: 1.25em;
+	background: $colorwhite;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+    .logo {
+        margin-bottom: 1.25em;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+		 h1 {
+			font-size: 1.875em;
+		}
+		.iniciales-logo {
+			padding: 0.3125em;
+			border: 2px solid $colorblack;
+			display: inline-block;
+			font-size: 1em;
+			margin-bottom: 0.9375em;
+		}  
+	}
+	   
+}
+
+.menu {
+	border-top: 1px solid $colorblack;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+    a {
+        padding: 0.625em;
+        color: $colorblack;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+        width: 100%;
+        text-align: center;
+        transition: 0.2s ease all;
+        font-size: 1em;
+	}
+         a:hover {
+            background: $colorblack;
+            color: #fff;
+        }
+    
+}

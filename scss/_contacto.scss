@@ -1,0 +1,83 @@
+/*Estilos Contacto*/
+
+$fuente-body:'Sora', sans-serif;
+
+body {
+	font-family: $fuente-body;
+	font-weight: 300;
+	font-size: 16px;
+	.contenedor-4{
+		width: 90%;
+		max-width: 75em;
+		margin: 1.25em auto;
+    }
+    .contenedor-formulario{
+        background: url(../img/leaf.gif);
+        background-size: cover;
+        box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+        margin: 0.93em 0;
+        display: grid;
+    
+        #form {
+            width: 31,37em;
+            margin: 50px auto 100px auto;
+            input {
+                font-family: 'Lato', sans-serif;
+                font-size: 0.875em;
+                width: 100%;
+                height: 50px;
+                padding: 0px 15px 0px 15px;   
+                background: transparent;
+                outline: none;
+                color: #687259;
+                border: solid 1px #b3aca7;
+                border-bottom: none;
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+              }
+              input:hover {
+                background: #ccd8c2;
+                color: #e2dedb;
+              }
+              textarea {
+                width: 100%;
+                max-width: 31,37em;
+                height: 110px;
+                max-height: 110px;
+                padding: 15px;   
+                background: transparent;
+                outline: none;           
+                color: #687259;
+                font-family: 'Lato', sans-serif;
+                font-size: 0.875em;
+                border: solid 1px #b3aca7;
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+              }      
+              textarea:hover {
+                background: #ccd8c2;
+                color: #e2dedb;
+              }
+              #submit {
+                width: 100%;
+                padding: 0;
+                margin: -5px 0px 0px 0px;  
+                font-family: 'Lato', sans-serif;
+                font-size: 0.875em;
+                background: transparent;
+                outline:none;
+                cursor: pointer; 
+                border: solid 1px #b3aca7;
+                border-top: none;
+              }
+              #submit:hover {
+                color: #ccd8c2;
+              }
+          }
+          
+    }
+}

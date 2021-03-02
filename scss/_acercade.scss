@@ -1,0 +1,138 @@
+/* estilos acerca de*/
+$fuente-body:'Sora', sans-serif;
+$colorwhite:#fff;
+$colorarticulo:#868b8d;
+$colorblack:#000;
+
+body {
+	font-family: $fuente-body;
+	font-weight: 300;
+	font-size: 16px;
+	.contenedor-2{
+		width: 90%;
+		max-width: 75em;
+		margin: 1.25em auto;
+    }
+}
+
+/*MIXINS*/
+@mixin fondos_blancos-texto-alineado {
+    padding: 1.25em;
+    margin-bottom: 0,625em;
+    background: $colorwhite;
+    box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+@mixin imagenes {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor-img{
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+    #img {
+        @include imagenes;
+    }
+}
+
+
+.contenido-2{
+     @include fondos_blancos-texto-alineado;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     h2 {
+        font-size: 1.875em;
+        font-weight: 600;
+        margin-bottom:0.93em ;
+    }
+    .p {
+        margin: 0.3125em;
+        font-weight: 300;
+    } 
+}
+
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+    grid-template-areas: 
+    'img1  img2  img3'
+    'img1  img4  img3'
+    'img1  img4  img3';
+    .img1{
+        grid-area: img1;
+        @include imagenes;
+    }
+    .img2{
+        grid-area: img2;
+        @include imagenes;
+    }
+    .img3{
+        grid-area: img3;
+        @include imagenes;
+    }
+    .img4{
+        grid-area: img4;
+        @include imagenes;
+    } 
+}
+
+.h2-p{
+    @include fondos_blancos-texto-alineado;
+    margin: 1.25em 0;
+    h2 {
+        display: flex;
+        font-size: 1.875em;
+        font-weight: 600;
+        margin-top: 0.93em;
+        justify-content: center;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: 300;
+        margin: 0.3125em;
+    } 
+}
+
+@media (max-width: 1200px) {
+    body{
+        font-size: 15px;
+    }
+}
+@media (max-width: 900px){
+	body{
+		font-size: 14px;
+	}
+}
+@media (max-width:768px){
+	body{
+		font-size: 13px ;
+	}
+    .contenido-2{
+        @include fondos_blancos-texto-alineado;
+        display: block;
+        p{
+            margin-bottom: 0.76em;
+        }
+   }
+    .imagenes{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        grid-template-areas: 
+        'img1  img2  img3  img4';
+    }
+}
+@media (max-width:600px){
+	body{
+		font-size: 10px;
+	}
+}
+
