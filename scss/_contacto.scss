@@ -81,3 +81,36 @@ body {
           
     }
 }
+@media (max-width: 1200px) {
+  body{
+      font-size: 15px;
+  }
+}
+@media (max-width:768px){
+body{
+  font-size: 13px ;
+  #form{
+    height: 50vh;
+    
+  }
+  input{
+    width: 95%;
+  }
+  textarea {
+    width: 95%;
+  }
+  #submit{
+    width: 95%;
+  }
+}
+
+}
+@media (max-width:500px){
+body{
+  font-size: 10px;
+  #form{
+    height: 50vh;
+    margin: 10px;
+  }
+  }
+}
