@@ -406,61 +406,47 @@ body {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(8, auto);
-  grid-template-areas: 'titulo1    parrafo1' 'imagen1    parrafo1' 'parrafo2   imagen2' 'parrafo2   titulo2' 'titulo3    parrafo3' 'imagen3    parrafo3' 'parrafo4   imagen4' 'parrafo4   titulo4'; }
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: 'imagen1    parrafo1' 'parrafo2   imagen2' 'imagen3    parrafo3' 'parrafo4   imagen4'; }
   .hechos .h2-hechos {
-    grid-area: titulo1;
     text-align: center;
-    margin: 0.62rem; }
+    margin: 0.62em; }
   .hechos .img-hechos {
     width: 100%;
     height: 100%;
     object-fit: cover;
     grid-area: imagen1; }
-  .hechos .p-hechos {
-    padding: 5em;
+  .hechos .hechos__contendor-parrafo1 {
+    margin: 0 0.62em;
     grid-area: parrafo1;
-    text-align: center; }
-  .hechos .h2-hechos2 {
-    grid-area: titulo2;
     text-align: center; }
   .hechos .img2-hechos {
     width: 100%;
     height: 100%;
     object-fit: cover;
     grid-area: imagen2; }
-  .hechos .p2-hechos {
-    padding: 5em;
+  .hechos .hechos__contendor-parrafo2 {
+    margin: 0 0.62em;
     grid-area: parrafo2;
-    text-align: center; }
-  .hechos .h2-hechos3 {
-    grid-area: titulo3;
     text-align: center; }
   .hechos .img3-hechos {
     width: 100%;
     height: 100%;
     object-fit: cover;
     grid-area: imagen3; }
-  .hechos .p3-hechos {
-    padding: 5em;
+  .hechos .hechos__contendor-parrafo3 {
+    margin: 0 0.62em;
     grid-area: parrafo3;
-    text-align: center; }
-  .hechos .h2-hechos4 {
-    grid-area: titulo4;
     text-align: center; }
   .hechos .img4-hechos {
     width: 100%;
     height: 100%;
     object-fit: cover;
     grid-area: imagen4; }
-  .hechos .p4-hechos {
-    padding: 4em;
+  .hechos .hechos__contendor-parrafo4 {
+    margin: 0 0.62em;
     grid-area: parrafo4;
     text-align: center; }
-
-@media (max-width: 1200px) {
-  body {
-    font-size: 15px; } }
 
 @media (max-width: 900px) {
   body {
@@ -473,17 +459,7 @@ body {
       grid-gap: 10px;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(8, auto);
-      grid-template-areas: 'titulo1    titulo1' 'imagen1    imagen1' 'parrafo1   parrafo1' 'imagen2    imagen2' 'titulo2    titulo2' 'parrafo2   parrafo2' 'imagen3    imagen3' 'titulo3    titulo3' 'parrafo3   parrafo3' 'imagen4    imagen4' 'titulo4    titulo4' 'parrafo4   parrafo4'; }
-      body .hechos .p-hechos, body .hechos .p2-hechos, body .hechos .p3-hechos, body .hechos .p4-hechos {
-        padding: 10px; } }
-
-@media (max-width: 768px) {
-  body {
-    font-size: 13px; } }
-
-@media (max-width: 600px) {
-  body {
-    font-size: 10px; } }
+      grid-template-areas: 'imagen1    imagen1' 'parrafo1   parrafo1' 'imagen2    imagen2' 'parrafo2   parrafo2' 'imagen3    imagen3' 'parrafo3   parrafo3' 'imagen4    imagen4' 'parrafo4   parrafo4'; } }
 
 /*variables*/
 * {
