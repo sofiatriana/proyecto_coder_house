@@ -279,7 +279,7 @@ body {
         -ms-transition: all 0.3s ease-in-out; }
       body .contenedor-formulario #form input:hover {
         background: #ccd8c2;
-        color: #e2dedb; }
+        color: #888888; }
       body .contenedor-formulario #form textarea {
         width: 100%;
         max-width: 31,37em;
@@ -298,7 +298,7 @@ body {
         -ms-transition: all 0.3s ease-in-out; }
       body .contenedor-formulario #form textarea:hover {
         background: #ccd8c2;
-        color: #e2dedb; }
+        color: #888888; }
       body .contenedor-formulario #form #submit {
         width: 100%;
         padding: 0;
