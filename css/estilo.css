@@ -520,6 +520,61 @@ a {
     font-weight: 300;
     margin-bottom: 1.25rem;
     color: #868b8d; }
+  .articulo .container-all {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms; }
+    .articulo .container-all .popup {
+      width: 100%;
+      max-width: 800px;
+      height: 500px;
+      position: relative;
+      display: flex;
+      background: white;
+      visibility: hidden;
+      top: -50%;
+      left: -80%;
+      transform: rotate(90deg) translate(-150%, 230%);
+      transition: all 600ms; }
+      .articulo .container-all .popup .img {
+        width: 40%;
+        background-image: url(../img/elefante.jpg); }
+      .articulo .container-all .popup .container-text {
+        width: 60%;
+        padding: 50px;
+        overflow-y: auto; }
+        .articulo .container-all .popup .container-text h1 {
+          font-size: 1.8em;
+          color: #000; }
+        .articulo .container-all .popup .container-text p {
+          margin-top: 20px;
+          font-size: 1em;
+          color: #1d1d1d; }
+    .articulo .container-all .btn-close-popup {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      right: -20px;
+      top: -20px;
+      padding: 20px;
+      background: black;
+      color: white;
+      border-radius: 50%;
+      line-height: 10px; }
+  .articulo .container-all:target {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1; }
+  .articulo .container-all:target .popup {
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    visibility: visible; }
 
 /* ---------- Articulo Destacado ----------*/
 .articulo.destacado {
@@ -607,7 +662,54 @@ a {
   body {
     font-size: 15px; }
     body .contenedor {
-      grid-template-areas: 'header		header   	header' 'destacado	destacado 	destacado' 'contenido	contenido 	contenido' 'aside      aside       aside' 'footer	 	footer 		footer'; } }
+      grid-template-areas: 'header		header   	header' 'destacado	destacado 	destacado' 'contenido	contenido 	contenido' 'aside      aside       aside' 'footer	 	footer 		footer'; }
+    body .container-all {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 600ms; }
+      body .container-all .popup {
+        height: 300px;
+        top: -50%;
+        left: -50%; }
+        body .container-all .popup .img {
+          width: 40%;
+          background-image: url(../img/elefante.jpg); }
+        body .container-all .popup .container-text {
+          width: 60%;
+          padding: 50px;
+          overflow-y: auto; }
+          body .container-all .popup .container-text h1 {
+            font-size: 1.8em;
+            color: #000; }
+          body .container-all .popup .container-text p {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #1d1d1d; }
+      body .container-all .btn-close-popup {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: -20px;
+        top: -20px;
+        padding: 20px;
+        background: black;
+        color: white;
+        border-radius: 50%;
+        line-height: 10px; }
+    body .container-all:target {
+      background: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%;
+      visibility: visible;
+      opacity: 1; }
+    body .container-all:target .popup {
+      top: 50%;
+      left: 50%;
+      transform: rotate(0deg) translate(-50%, -50%);
+      visibility: visible; } }
 
 @media (max-width: 768px) {
   body {
