@@ -40,6 +40,7 @@ body {
 	.img-hechos{
 		@include imagenes;
 		grid-area: imagen1;
+		box-shadow: 15px 15px 10px 5px rgba(102, 102, 102, 0.1);
 	}
 	.hechos__contendor-parrafo1{
 		margin:0 0.62em;
@@ -51,6 +52,7 @@ body {
 	.img2-hechos{
 		@include imagenes;
 		grid-area: imagen2;
+		box-shadow: -15px 15px 10px 5px rgba(102, 102, 102, 0.1);
 	}
 	.hechos__contendor-parrafo2{
 		margin:0 0.62em;
@@ -62,6 +64,7 @@ body {
 	.img3-hechos{
 		@include imagenes;
 		grid-area: imagen3;
+		box-shadow: 15px 15px 10px rgba(102, 102, 102, 0.1);
 	}
 	.hechos__contendor-parrafo3{
 		margin:0 0.62em;
@@ -73,6 +76,7 @@ body {
 	.img4-hechos{
 		@include imagenes;
 		grid-area: imagen4;
+		box-shadow: -15px 15px 10px rgba(102, 102, 102, 0.1);
 	}
 	.hechos__contendor-parrafo4{
 		margin:0 0.62em;
