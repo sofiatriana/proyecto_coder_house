@@ -86,7 +86,8 @@ a {
 		font-weight: 300;
 		margin-bottom: 1.25rem; 
 		color:$colorarticulo;
-	}
+	}	
+	
 	.container-all{
 		width: 100%;
 		height: 100%;
@@ -95,11 +96,16 @@ a {
 		opacity: 0;
 		transition: all 600ms;
 		.popup{
-			width: 100%;
+			width: 90%;
 			max-width: 800px;
 			height: 500px;
 			position: relative;
-			display: flex;
+			display: grid;
+			grid-template-areas:
+			 'foto   foto'
+             'texto  texto';
+			 grid-template-columns: 1fr 1fr;
+			 grid-template-rows: 1fr 1fr;
 			background: white;
 			visibility: hidden;
 			top: -50%;
@@ -107,14 +113,17 @@ a {
 			transform: rotate(90deg) translate(-150%, 230%);
 			transition: all 600ms;
 			.img{
-				width: 40%;
+				width: 100%;
 				background-image: url(../img/elefante.jpg);
+				background-size: cover;
+				grid-area: foto;
 			}
 			.container-text{
-				width: 60%;
+				width: 100%;
 				padding: 50px;
 				overflow-y: auto;
-				h1{
+				grid-area: texto;
+				h2{
 					font-size: 1.8em;
 					color:#000;
 				}
@@ -148,15 +157,29 @@ a {
 		height: 100%;
 		visibility: visible;
 		opacity: 1;
+		.popup{
+			top: 50%;
+			left: 50%;
+			transform: rotate(0deg) translate(-50%, -50%);
+			visibility: visible;
+		}	
+	}
+	.container-all{
+
+			.img2{
+				width: 100%;
+				background-image: url(../img/leon.jpg);
+				background-size: cover;
+				grid-area: foto;
+			}
+
+		
+
 	}
 	
-	.container-all:target .popup{
-		top: 50%;
-		left: 50%;
-		transform: rotate(0deg) translate(-50%, -50%);
-		visibility: visible;
+
 	}
-}
+
 
 
 /* ---------- Articulo Destacado ----------*/
@@ -269,69 +292,11 @@ a {
 				'aside      aside       aside'
 				'footer	 	footer 		footer';
 		}
-		.container-all{
-			width: 100%;
-			height: 100%;
-			position: fixed;
-			visibility: hidden;
-			opacity: 0;
-			transition: all 600ms;
-			.popup{
-				height: 300px;
-				top: -50%;
-				left: -50%;
-				.img{
-					width: 40%;
-					background-image: url(../img/elefante.jpg);
-				}
-				.container-text{
-					width: 60%;
-					padding: 50px;
-					overflow-y: auto;
-					h1{
-						font-size: 1.8em;
-						color:#000;
-					}
-						
-				   p{
-					margin-top: 20px;
-					font-size: 1em;
-					color: rgb(29, 29, 29);
-					}
-				}
-			}
-			
-			.btn-close-popup{
-				width: 50px;
-				height: 50px;
-				position: absolute;
-				right: -20px;
-				top: -20px;
-				padding: 20px;
-				background: black;
-				color: white;
-				border-radius: 50%;
-				line-height: 10px;
-			}
-		}
 		
 		
-		.container-all:target{
-			background: rgba(0,0,0,0.8);
-			width: 100%;
-			height: 100%;
-			visibility: visible;
-			opacity: 1;
-		}
-		
-		.container-all:target .popup{
-			top: 50%;
-			left: 50%;
-			transform: rotate(0deg) translate(-50%, -50%);
-			visibility: visible;
-		}
 	}
 }
+	
 @media (max-width:768px){
 	body{
 		font-size: 13px ;
