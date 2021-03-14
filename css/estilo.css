@@ -415,7 +415,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    grid-area: imagen1; }
+    grid-area: imagen1;
+    box-shadow: 15px 15px 10px 5px rgba(102, 102, 102, 0.1); }
   .hechos .hechos__contendor-parrafo1 {
     margin: 0 0.62em;
     grid-area: parrafo1;
@@ -424,7 +425,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    grid-area: imagen2; }
+    grid-area: imagen2;
+    box-shadow: -15px 15px 10px 5px rgba(102, 102, 102, 0.1); }
   .hechos .hechos__contendor-parrafo2 {
     margin: 0 0.62em;
     grid-area: parrafo2;
@@ -433,7 +435,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    grid-area: imagen3; }
+    grid-area: imagen3;
+    box-shadow: 15px 15px 10px rgba(102, 102, 102, 0.1); }
   .hechos .hechos__contendor-parrafo3 {
     margin: 0 0.62em;
     grid-area: parrafo3;
@@ -442,7 +445,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    grid-area: imagen4; }
+    grid-area: imagen4;
+    box-shadow: -15px 15px 10px rgba(102, 102, 102, 0.1); }
   .hechos .hechos__contendor-parrafo4 {
     margin: 0 0.62em;
     grid-area: parrafo4;
